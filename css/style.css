@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif !important;
+}
+
+nav {
+  height: 10vh;
+}
+
+nav img {
+  width: 2rem;
+}
+
+header {
+  height: 90vh;
+  padding: 300px;
+}
+
+header h1 {
+  border-left: 4px solid #22162a !important;
+}
+
+h1 span {
+  color: #842dbe;
+  text-shadow: 22px 11px 10px rgba(0, 0, 0, 0.58);
+}
+
+a {
+  color: #842dbe !important;
+}
+
+header h1,
+.skills h3,
+.skills picture,
+#skills-section h1,
+#contact-section h1,
+#contact-section i,
+#contact-section p,
+#contact-section span {
+  color: #22162a !important;
+}
+
+#projects-section {
+  background-color: #a96cd2;
+  background-image: linear-gradient(135deg, #9861bd, #a96cd2);
+
+  padding-top: 15rem;
+
+  -webkit-clip-path: polygon(
+    0 0,
+    100% 25%,
+    100% 100%,
+    50% 100%,
+    0 100%,
+    0% 25%
+  );
+  clip-path: polygon(0 0, 100% 25%, 100% 100%, 50% 100%, 0 100%, 0% 25%);
+}
+
+#skills-section img {
+  height: 2.2rem;
+}
+
+#about-section {
+  background-color: #a96cd2;
+  background-image: linear-gradient(135deg, #9861bd, #a96cd2);
+
+  padding: 10rem;
+
+  -webkit-clip-path: polygon(0 0, 0 0, 100% 23%, 100% 100%, 100% 100%, 0 77%);
+  clip-path: polygon(0 0, 0 0, 100% 23%, 100% 100%, 100% 100%, 0 77%);
+}
+
+/* button */
+.button-styled {
+  background-color: #a96cd2;
+  border: 0 solid #e5e7eb;
+  box-sizing: border-box;
+  display: flex;
+  font-family: ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1.75rem;
+  padding: 0.75rem 1.65rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none #000000 solid;
+  text-decoration-thickness: auto;
+  width: 40%;
+  max-width: 460px;
+  position: relative;
+  cursor: pointer;
+  transform: rotate(-2deg);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-styled:focus {
+  outline: 0;
+}
+
+.button-styled:after {
+  content: "";
+  position: absolute;
+  border: 1px solid #22162a;
+  bottom: 4px;
+  left: 4px;
+  width: calc(100% - 1px);
+  height: calc(100% - 1px);
+}
+
+.button-styled:hover:after {
+  bottom: 2px;
+  left: 2px;
+}
+
+@media (min-width: 768px) {
+  .button-styled {
+    padding: 0.75rem 3rem;
+    font-size: 1.25rem;
+  }
+}
+
+
+
+/* FOOTER */
+footer {
+  background: #22162a;
+}
+
+.angle-up{
+  transition: 0.2s;
+}
+
+.angle-up:hover{
+  transform: translateY(-0.3rem);
+}
+
+.angle-up li a{
+  transition: 0.2s;
+}
+.angle-up li a:hover{
+  transform: translateY(-0.3rem);
+  
+}
+
+
+
+
+/* LINKS */
+
+.link {
+  cursor: pointer;
+  position: relative;
+  white-space: nowrap;
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.link::before,
+.link::after {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  top: 100%;
+  left: 0;
+  pointer-events: none;
+}
+
+.link::before {
+  content: "";
+}
+
+.link--ersa {
+  padding: 0 10px;
+  letter-spacing: 1px;
+  text-indent: 1px;
+}
+
+.link--ersa::before {
+  top: 50%;
+  height: 2px;
+  transform-origin: 100% 50%;
+  transform: scale3d(0, 1, 1);
+  transition: transform 0.3s cubic-bezier(0.4, 1, 0.8, 1);
+}
+
+.link--ersa:hover::before {
+  transform-origin: 0% 50%;
+  transform: scale3d(1, 1, 1);
+}
+
+.link--ersa span {
+  display: inline-block;
+  transition: transform 0.3s cubic-bezier(0.4, 1, 0.8, 1);
+}
+
+.link--ersa:hover span {
+  transform: scale3d(1.1, 1.1, 1.1);
+}
+
+/* --------- Card Animation ---------- */
+.skills:not(:empty):hover,
+.skills:not(:empty):focus {
+  z-index: 1;
+  background: #a96cd2;
+  opacity: 1;
+  transform: scale(1.15) rotateZ(10deg);
+  cursor: pointer;
+}
+
+.skills:not(:empty):hover picture,
+.skills:not(:empty):focus picture,
+.skills:not(:empty):hover h3,
+.skills:not(:empty):focus h3 {
+  color: #fff !important;
+}
+
+.skills {
+  padding: 10px;
+  transition: all 0.4s cubic-bezier(0.33, 1, 0.68, 1);
+  transition-property: background, transform, color, opacity;
+}
+
+
+/* ICONS */
+
+/* Wrapper */
+.icon-button {
+  background-color: white;
+  border-radius: 3.6rem;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 2rem;
+  height: 3.6rem;
+  line-height: 3.6rem;
+  margin: 0 5px;
+  position: relative;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 3.6rem;
+}
+
+/* Circle */
+.icon-button span {
+  border-radius: 0;
+  display: block;
+  height: 0;
+  left: 50%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  width: 0;
+}
+
+.icon-button:hover span {
+  width: 3.6rem;
+  height: 3.6rem;
+  border-radius: 3.6rem;
+  margin: -1.8rem;
+  background-color: #9861bd;
+}
+
+/* Icons */
+.icon-button i {
+  background: none;
+  color: #842dbe;
+  height: 3.6rem;
+  left: 0;
+  line-height: 3.6rem;
+  position: absolute;
+  top: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  width: 3.6rem;
+  z-index: 10;
+}
+.icon-button .icon-twitter {
+  color: #4099ff;
+}
+.icon-button .icon-facebook {
+  color: #3b5998;
+}
+.icon-button .icon-google-plus {
+  color: #db5a3c;
+}
+.icon-button:hover i {
+  color: white !important;
+}
