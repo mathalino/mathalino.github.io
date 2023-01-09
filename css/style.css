@@ -14,7 +14,6 @@ nav img {
 
 header {
   height: 90vh;
-  padding: 300px;
 }
 
 header h1 {
@@ -23,7 +22,7 @@ header h1 {
 
 h1 span {
   color: #842dbe;
-  text-shadow: 22px 11px 10px rgba(0, 0, 0, 0.58);
+  text-shadow: 4px 4px 4px rgba(0,0,0,0.56);
 }
 
 a {
@@ -98,6 +97,7 @@ header h1,
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  
 }
 
 .button-styled:focus {
@@ -112,6 +112,7 @@ header h1,
   left: 4px;
   width: calc(100% - 1px);
   height: calc(100% - 1px);
+  transition: 0.2s;
 }
 
 .button-styled:hover:after {
