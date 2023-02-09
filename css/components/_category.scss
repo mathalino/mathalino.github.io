@@ -1,0 +1,51 @@
+.category {
+  background-color: $bodyBackgroundColor;
+  border-bottom: 2px solid $bodyBackgroundColorTint1;
+
+    h1{
+      color: $mainColor;
+      font-weight: 700;
+    }
+
+  .category-details {
+    position: relative;
+  }
+
+  .category-item {
+    .btn{
+      font-weight: 600;
+      border: 1px solid $bodyBackgroundColor;
+      color: $bodyBackgroundColor;
+      &:focus{
+        color: $mainColor;
+        background-color: $bodyBackgroundColor;
+      }
+    }
+
+    display: block;
+    position: relative;
+    background-color: $mainColor;
+    padding: 32px 24px;
+    margin: 12px;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+    color: $accentColor2 !important;
+
+    &:before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: -16px;
+      right: -16px;
+      background: $accentColor;
+      height: 45px;
+      width: 45px;
+      border-radius: 32px;
+      transform: scale(1);
+      transform-origin: 50% 50%;
+      transition: transform 0.25s ease-out;
+    }
+
+  }
+}

@@ -1,0 +1,22 @@
+.form-control {
+    &:focus {
+        border-color: $accentColor !important;
+        box-shadow: 0 0 0 0.15rem $accentColor !important;
+    }
+}
+
+.form-check-input {
+    border-color: $mainColor !important;
+
+    &:checked {
+        background-color: $bodyBackgroundColor !important;
+        border-color: $bodyBackgroundColor !important;
+    }
+
+    &:focus {
+        outline: 0;
+        box-shadow: none !important;
+    }
+
+
+}

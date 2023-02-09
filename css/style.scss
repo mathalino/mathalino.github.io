@@ -1,0 +1,92 @@
+$aTextColor: #feffdb;
+$bodyBackgroundColor: #ffc60b;
+$bodyBackgroundColorTint1: #ffd13c; // light 20%
+$bodyBackgroundColorTint2: #cc9e09; // dark 20%
+$mainColor: #0d2b33;
+$accentColor: #03989e;
+$accentColorTint: #027a7e; // dark 20%
+$accentColorTint2: #68c1c5; // light 40%
+$accentColor2: #eff0f2;
+$disabledColor: #5e5e5ec4;
+$hrColor: #5e5e5e75;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Satoshi", sans-serif;
+}
+
+body {
+  color: $mainColor;
+  // background-color: $bodyBackgroundColor;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+
+ul {
+  padding-left: 0 !important;
+}
+
+li {
+  list-style-type: none;
+}
+
+
+@import 'components/nav';
+@import 'components/hero';
+@import 'components/category';
+@import 'components/feature';
+@import 'components/quantity';
+@import 'components/input';
+@import 'components/offcanvas';
+@import 'components/footer';
+@import 'components/form-control';
+@import 'components/dropdown';
+@import 'components/buttons';
+@import 'components/modal';
+@import 'components/iphone/page-link';
+@import 'components/iphone/choices';
+@import 'components/iphone/items';
+@import 'components/iphone/filter';
+@import 'components/product/product-details';
+@import 'components/product/specs';
+@import 'components/product/specs-link';
+
+
+
+
+
+.hover-btn {
+  transition: all 0.2s;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+footer a:hover {
+  color: #ffc60b !important;
+  text-decoration: underline;
+}
+
+
+
+.category-details h2,
+.hover-btn {
+  white-space: nowrap;
+}
+
+
+
+
+
+
+
+
+@import 'components/mediascreen';

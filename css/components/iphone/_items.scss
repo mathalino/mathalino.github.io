@@ -1,0 +1,55 @@
+.items {
+
+    .card-header,
+    .card-footer {
+        background-color: #fff;
+        border: none;
+    }
+
+    .card-body {
+        span,h6{
+            color: $disabledColor;
+            font-weight: 600;
+        }
+        p {
+            text-align: center;
+            margin: 0;
+        }
+    }
+
+    .card-footer {
+        padding: 0;
+        white-space: nowrap;
+    }
+
+    .buy-now {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        transition: all 0.4s;
+        background-color: $bodyBackgroundColorTint2;
+        opacity: 0;
+        margin-top: -35px;
+        a {
+            color: $mainColor;
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+    }
+
+    .btn{
+        color: $accentColor;
+        border: 2px solid $accentColor;
+        font-weight: 600;
+        text-transform: uppercase;
+        &:hover,&:focus{
+            color: $accentColor2;
+            background-color: $accentColor
+        }
+    }
+}
+
+
+
+
+
