@@ -234,8 +234,7 @@ footer .footer-logo img {
 }
 
 .form-control:focus {
-  border-color: #03989e !important;
-  box-shadow: 0 0 0 0.15rem #03989e !important;
+  box-shadow: 0 0 0 0.15rem rgba(104, 192, 197, 0.1450980392) !important;
 }
 
 .form-check-input {
@@ -268,6 +267,43 @@ footer .footer-logo img {
 }
 #how-to-buy a:hover, #how-to-buy a:focus {
   text-decoration: underline !important;
+}
+
+.error {
+  margin-top: 128px;
+  text-align: center;
+}
+.error h1 {
+  font-size: 15rem;
+}
+
+.user-details {
+  margin-top: 88px;
+}
+.user-details form {
+  border-right: 2px solid rgba(94, 94, 94, 0.4588235294);
+  border-left: 2px solid rgba(94, 94, 94, 0.4588235294);
+}
+.user-details form input {
+  margin-bottom: 1rem;
+}
+.user-details form input[type=number] {
+  text-align: start;
+}
+.user-details form label {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.user-details form span {
+  font-size: smaller;
+}
+.user-details .btn {
+  font-weight: 700;
+  background-color: #ffc60b;
+  color: #0d2b33;
+}
+.user-details .btn:hover, .user-details .btn:focus {
+  background-color: #cc9e09;
 }
 
 .pagination .active > .page-link,
@@ -313,6 +349,9 @@ footer .footer-logo img {
 .items .card-footer {
   background-color: #fff;
   border: none;
+}
+.items .card-body .card-title {
+  text-transform: uppercase !important;
 }
 .items .card-body span, .items .card-body h6 {
   color: rgba(94, 94, 94, 0.768627451);
@@ -465,6 +504,9 @@ footer a:hover {
   .footer-quick-link li:last-child {
     border: none;
   }
+  .user-details form {
+    border: none;
+  }
 }
 @media screen and (max-width: 575px) {
   .feature .feature-img {
@@ -492,5 +534,8 @@ footer a:hover {
   .category .category-item:hover .hover-btn {
     opacity: 1;
     top: 95%;
+  }
+  .error h1 {
+    font-size: 10rem;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -72,32 +72,14 @@
                 data-bs-toggle="dropdown"
                 role="button"
                 >Android & Accessories</a
-              >
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item fw-bold" href="android.html"
-                    >Android</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item fw-bold" href="android.html">Case</a>
-                </li>
-                <li>
-                  <a class="dropdown-item fw-bold" href="android.html">Cable</a>
-                </li>
-                <li>
-                  <a class="dropdown-item fw-bold" href="android.html"
-                    >Charger</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item fw-bold" href="#">Tempered Glass</a>
-                </li>
+              ><ul class="dropdown-menu">
+                <li><a class="dropdown-item fw-bold" href="android.html">Android</a></li>
+                <li><a class="dropdown-item fw-bold" href="android-earphone.html">Earphone</a></li>
+                <li><a class="dropdown-item fw-bold" href="android-case.html">Phone Case</a></li>
+                <li><a class="dropdown-item fw-bold" href="android-charger.html">Charger</a></li>
+                <li><a class="dropdown-item fw-bold" href="android-other.html">Other</a></li>
 
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item fw-bold" href="#">Sim Card</a>
-                </li>
+              
               </ul>
             </li>
 
@@ -236,6 +218,55 @@
       </div>
     </div>
 
+
+     <!-- offcanvas cart with item-->
+     <div class="offcanvas offcanvas-end cart-added" id="cart-added">
+      <div class="offcanvas-header">
+        <img src="img/logo.png" alt="" class="rounded-circle" />
+        <h5 class="m-0">Cart</h5>
+        <button
+          type="button"
+          data-bs-dismiss="offcanvas"
+          class="btn-close btn-close-white"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          <div class="p-3 border d-flex justify-content-between">
+            <div class="d-flex">
+              <img
+                src="img/android & accessories/Nokia-61.webp"
+                alt=""
+                class="cart-img me-2"
+              />
+              <div class="d-flex flex-column justify-content-center">
+                <h6>Nokia 6</h6>
+
+                <p>&#8369;10,999.00</p>
+              </div>
+            </div>
+            <div class="d-flex align-items-center flex-nowrap">
+              <div class="input-group quantity mb-3">
+                <button type="button" class="btn btn-secondary">+</button>
+                <input type="number" value="1" class="form-control" />
+                <button type="button" class="btn btn-secondary">-</button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="mt-3 d-flex flex-column align-items-end justify-content-end"
+          >
+            <p><strong>Total:</strong> &#8369;10,999.00</p>
+            <div>
+              <a href="checkout.html" type="button" id="checkout" class="btn px-4">
+                Checkout
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <section class="product-details container">
       <div>
         <div class="d-flex flex-column flex-lg-row">
@@ -259,14 +290,14 @@
               / Nokia 6
             </h5>
             <h3 class="mb-4">Nokia 6</h3>
-            <h5 class="mb-4 fw-bold fs-2">&#8369;9,999.00</h5>
+            <h5 class="mb-4 fw-bold fs-2">&#8369;10,999.00</h5>
             <div class="mb-4 d-flex align-items-center">
               <div class="mx-2 input-group quantity">
                 <button type="button" class="btn btn-secondary">+</button>
                 <input type="number" value="1" class="form-control" />
                 <button type="button" class="btn btn-secondary">-</button>
               </div>
-              <button type="button" class="mx-2 px-3 py-2 btn">
+              <button type="button" data-bs-target="#cart-added" data-bs-toggle="offcanvas" class="mx-2 px-3 py-2 btn">
                 Add to cart
               </button>
             </div>
@@ -483,22 +514,10 @@
             <div class="mx-3 footer-quick-link col-12 col-md-6">
               <h4 class="">Quick Links</h4>
               <ul class="d-flex d-md-block">
-                <li>
-                  <a class="me-1 me-sm-3 m-md-0" href="index.html">Home</a>
-                </li>
-                <li>
-                  <a class="mx-1 mx-sm-3 m-md-0" href="iphone.html">iPhone</a>
-                </li>
-
-                <li>
-                  <a class="mx-1 mx-sm-3 m-md-0 d-flex" href="#">
-                    <i
-                      class="d-flex align-items-center fa-brands fa-android d-block d-sm-none"
-                      >&nbsp;</i
-                    ><span class="d-none d-sm-block">Android&nbsp;</span> &
-                    Accessories</a
-                  >
-                </li>
+                
+                <li><a class="me-3 m-md-0" href="iphone.html">iPhone</a></li>
+                
+                <li ><a class="mx-3 m-md-0 d-flex" href="android.html">Android & Accessories</a></li>
               </ul>
             </div>
           </div>
@@ -512,9 +531,7 @@
           >
             <p>Copyright &copy; 2023 OBN Gadgets</p>
           </div>
-          <div
-            class="my-1 my-lg-0 footer-bottom-items d-flex align-items-center"
-          >
+          <div class="my-1 my-lg-0 footer-bottom-items d-flex align-items-center">
             <a
               href="https://www.facebook.com/obn.gadgets"
               target="_blank"
