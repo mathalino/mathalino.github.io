@@ -23,7 +23,11 @@
           
       }
   }
-  
+  .mini-img{
+    img{
+      width: 50px;
+    }
+  }
   .btn{
     color: $mainColor;
     background-color: $bodyBackgroundColor;

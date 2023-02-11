@@ -286,7 +286,7 @@ footer .footer-logo img {
 }
 .pagination .page-item .page-link:hover, .pagination .page-item .page-link:focus {
   z-index: 2;
-  border-color: #eff0f2;
+  border-color: #68c1c5;
   box-shadow: inset 0 0 0 4px #68c1c5;
 }
 
@@ -377,6 +377,9 @@ footer .footer-logo img {
   border-color: #0d2b33;
   background-color: #0d2b33;
 }
+.product-details .mini-img img {
+  width: 50px;
+}
 .product-details .btn {
   color: #0d2b33;
   background-color: #ffc60b;
@@ -389,6 +392,25 @@ footer .footer-logo img {
 
 .specs-details .specs-title {
   background-color: #ffc60b;
+  text-transform: uppercase;
+}
+.specs-details .specs-title h5 {
+  margin: 0 0 0 1.3rem;
+  color: #0d2b33;
+  font-weight: 800;
+}
+.specs-details .sticky-top {
+  top: 88px;
+}
+.specs-details table {
+  --bs-table-hover-bg: #ffc60b25;
+}
+.specs-details table tbody tr th {
+  padding-left: 1.8rem;
+  width: 40%;
+}
+.specs-details table tbody tr td {
+  width: 60%;
 }
 
 .specs-link {

@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OBN | iPhone</title>
+    <link rel="icon" href="img/logo.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/6f8fdf9f13.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,301,701,300,501,401,901,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand order-2 order-lg-1" href="index.html"
+          ><img src="img/logo.png" alt=""
+        /></a>
+        <a
+          href="#"
+          class="ms-3 ms-sm-0 d-block d-lg-none order-1"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#navigation-bar"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </a>
+        <a
+          href="#"
+          class="d-block d-lg-none order-3"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#cart"
+        >
+          <i class="me-3 me-sm-0 fa-solid fa-cart-shopping"></i
+        ></a>
+        <div
+          id="menu"
+          class="collapse order-lg-2 justify-content-end navbar-collapse"
+        >
+          <ul class="navbar-nav align-items-center">
+            <li class="nav-item">
+              <a href="index.html" class="mx-2 nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a
+                href="#"
+                data-bs-target="#how-to-buy"
+                data-bs-toggle="modal"
+                class="mx-2 nav-link"
+                >How to Order</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="iphone.html" class="mx-2 nav-link">iPhone</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                href="#"
+                class="mx-2 nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                role="button"
+                >Android & Accessories</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item fw-bold" href="android.html"
+                    >Android</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item fw-bold" href="android.html">Case</a>
+                </li>
+                <li>
+                  <a class="dropdown-item fw-bold" href="android.html">Cable</a>
+                </li>
+                <li>
+                  <a class="dropdown-item fw-bold" href="android.html"
+                    >Charger</a
+                  >
+                </li>
+
+                <li>
+                  <a class="dropdown-item fw-bold" href="#">Tempered Glass</a>
+                </li>
+
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item fw-bold" href="#">Sim Card</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a
+                role="button"
+                class="mx-2 nav-link"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#cart"
+                ><i class="fa-solid fa-cart-shopping"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- modal-how-2-order -->
+
+    <div
+      class="modal fade"
+      id="how-to-buy"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="how-to-buyLabel">How to Order</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <h3>For pick up:</h3>
+            <ol>
+              <li>Choose a product.</li>
+              <li>Add to cart.</li>
+              <li>Proceed to Checkout.</li>
+              <li>Complete the details for your order.</li>
+              <li>Verify your order to move forward.</li>
+              <li>
+                Your order number will be sent to your phone number or email.
+              </li>
+              <li>Provide your order number and make payment at our store.</li>
+            </ol>
+            <h3>For shipping:</h3>
+            <p>
+              Message us on our
+              <a
+                href="https://www.facebook.com/obn.gadgets"
+                target="_
+          "
+                >facebook page</a
+              >
+              or
+              <a href="https://www.m.me/obn.gadgets" target="_blank">
+                messenger</a
+              >
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- offcanvas navbar -->
+    <div class="offcanvas offcanvas-start" id="navigation-bar">
+      <div class="offcanvas-header">
+        <img src="img/logo.png" alt="" class="rounded-circle" />
+        <h5 class="m-0">Menu</h5>
+        <button
+          type="button"
+          data-bs-dismiss="offcanvas"
+          class="btn-close btn-close-white"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="help">
+          <a href="index.html" class="p-3 btn d-flex justify-content-between">
+            Home </a
+          ><a href="iphone.html" class="p-3 btn d-flex justify-content-between">
+            iPhone
+          </a>
+          <a
+            data-bs-toggle="collapse"
+            data-bs-target="#accessories"
+            class="p-3 btn d-flex justify-content-between align-items-center"
+          >
+            Android & Accessories
+
+            <i class="fa-solid fa-angle-right"></i>
+          </a>
+        </div>
+
+        <div id="accessories" class="collapse">
+          <ul class="list-group">
+            <li class="p-3 list-group-item"><a href="#">Android</a></li>
+            <li class="p-3 list-group-item"><a href="#">Case</a></li>
+            <li class="p-3 list-group-item"><a href="#">Cable</a></li>
+            <li class="p-3 list-group-item"><a href="#">Charger</a></li>
+            <li class="p-3 list-group-item">
+              <a href="#">Tempered Glass</a>
+            </li>
+            <li class="p-3 list-group-item"><a href="#">Sim Cards</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- offcanvas cart -->
+    <div class="offcanvas offcanvas-end" id="cart">
+      <div class="offcanvas-header">
+        <img src="img/logo.png" alt="" class="rounded-circle" />
+        <h5 class="m-0">Cart</h5>
+        <button
+          type="button"
+          data-bs-dismiss="offcanvas"
+          class="btn-close btn-close-white"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <h3 class="text-center">No products in cart.</h3>
+      </div>
+    </div>
+
+    <section class="product-details container">
+      <div>
+        <div class="d-flex flex-column flex-lg-row">
+          <div class="d-flex col-lg-5 col-12 justify-content-center">
+            <img src="img/iphone/iphone-13-midnight1.png" alt="" />
+            <div class="mini-img">
+              <div class="my-2 border rounded-1"><a href="#"><img src="img/iphone/iphone-13-midnight1.png" class="rounded-3" alt=""></a></div>
+             
+
+          </div>
+          </div>
+          <div class="mt-5 mt-lg-0 ms-lg-5 d-flex flex-column col-12 col-lg-5">
+            <h5 class="mb-4">
+              <a href="index.html" class="shortcut-link text-secondary">Home</a>
+              /
+              <a href="iphone.html" class="shortcut-link text-secondary"
+                >iPhone</a
+              >
+              / iPhone 13 128GB Midnight
+            </h5>
+            <h3 class="mb-4">Apple iPhone 13 128GB Midnight</h3>
+            <h5 class="mb-4 fw-bold fs-2">&#8369;44,999.00</h5>
+            <div class="mb-4 d-flex align-items-center">
+              <div class="mx-2 input-group quantity">
+                <button type="button" class="btn btn-secondary">+</button>
+                <input type="number" value="1" class="form-control" />
+                <button type="button" class="btn btn-secondary">-</button>
+              </div>
+              <button type="button" class="mx-2 px-3 py-2 btn">
+                Add to cart
+              </button>
+            </div>
+            <div>
+              <h4>Product Details</h4>
+              <p>
+                Nokia 6 features a Gorilla Glass protected, in-cell 5.5-inch
+                2.5D display with a resolution of 1080 x 1920 pixels. The
+                Snapdragon 430 chipset powers the phone, containing an octa-core
+                CPU and the Adreno 505 GPU. 3GB of RAM is inside along with 32GB
+                of native storage. The 16MP rear camera carries an f/2.0
+                aperture and PDAF laser auto focusing. In front is an 8MP
+                camera, also sporting an f/2.0 aperture, for selfies and video
+                chats.
+              </p>
+            </div>
+          </div>
+        </div>
+       
+       
+      </div>
+    </section>
+ <!-- for specs  -->
+    <section class="my-4 p-0 specs container border rounded-2">
+      <div class="specs-details">
+        <div class="p-2 specs-title sticky-top">
+          <h5>display</h5>
+        </div>
+        <table class="table table-striped table-hover">
+          <thead>
+            &nbsp;
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Size:</th>
+              <td>6.1 inches</td>
+            </tr>
+            <tr>
+              <th scope="row">Resolution:</th>
+              <td>2532 x 1170 pixels, 19.5:9 ratio, 457 PPI</td>
+            </tr>
+            <tr>
+              <th scope="row">Refresh rate:</th>
+              <td colspan="2">60Hz</td>
+            </tr>
+            <tr>
+              <th scope="row">Screen-to-body:</th>
+              <td colspan="2">87.24 %</td>
+            </tr>
+            <tr>
+              <th scope="row">Features:</th>
+              <td colspan="2">
+                HDR support, Oleophobic coating, Scratch-resistant glass
+                (Ceramic Shield), Ambient light sensor, Proximity sensor
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="specs-details">
+        <div class="p-2 specs-title sticky-top">
+          <h5>hardware</h5>
+        </div>
+        <table class="table table-striped table-hover">
+          <thead>
+            &nbsp;
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">System chip:</th>
+              <td>Apple A15 Bionic (5 nm)</td>
+            </tr>
+            <tr>
+              <th scope="row">Processor:</th>
+              <td>Hexa-core, 64-bit</td>
+            </tr>
+
+            <tr>
+              <th scope="row">RAM:</th>
+              <td colspan="2">4GB</td>
+            </tr>
+            <tr>
+              <th scope="row">Internal storage:</th>
+              <td colspan="2">128GB</td>
+            </tr>
+            <tr>
+              <th scope="row">OS:</th>
+              <td colspan="2">iOS (15.x)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="specs-details">
+        <div class="p-2 specs-title sticky-top">
+          <h5>battery</h5>
+        </div>
+        <table class="table table-striped table-hover">
+          <thead>
+            &nbsp;
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Capacity:</th>
+              <td>3227 mAh</td>
+            </tr>
+            <tr>
+              <th scope="row">Charging:</th>
+              <td>
+                USB Power Delivery, Qi wireless charging, MagSafe wireless
+                charging
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Max charge speed:</th>
+              <td colspan="2">Wired: 20.0W; Wireless: 15.0W</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="specs-details">
+        <div class="p-2 specs-title">
+          <h5>camera</h5>
+        </div>
+        <table class="table table-striped table-hover">
+          <thead>
+            &nbsp;
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Rear:</th>
+              <td>Dual camera</td>
+            </tr>
+            <tr>
+              <th scope="row">Main camera:</th>
+              <td>12 MP (OIS, PDAF)</td>
+            </tr>
+            <tr>
+              <th scope="row">Second camera:</th>
+              <td colspan="2">12 MP (Ultra-wide)</td>
+            </tr>
+            <tr>
+              <th scope="row">Video recording:</th>
+              <td colspan="2">
+                3840x2160 (4K UHD) (60 fps), 1920x1080 (Full HD) (240 fps),
+                1280x720 (HD) (30 fps)
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Front:</th>
+              <td colspan="2">
+                12 MP (Time-of-Flight (ToF), EIS, HDR, Slow-motion videos)
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <footer class="p-4">
+      <div class="container">
+        <!-- logo-links-div  -->
+        <div
+          class="mb-4 d-flex flex-column flex-lg-row justify-content-between"
+        >
+          <!-- logo-div  -->
+          <div
+            class="footer-logo d-flex justify-content-center align-items-center"
+          >
+            <img src="img/logo.png" alt="" class="rounded-circle" />
+          </div>
+
+          <!-- links-div  -->
+          <div class="d-flex flex-wrap flex-md-nowrap">
+            <div class="mx-3 footer-link col-12 col-md-6">
+              <h4 class="">Contact</h4>
+              <ul>
+                <li class="row">
+                  <a
+                    href="https://www.google.com/maps/place/OBN+Gadgets/@16.7795767,121.6981194,21z/data=!4m12!1m6!3m5!1s0x3397c81910a0ad7f:0xe5db9ca75b4d67b5!2sHot+Gadgets!8m2!3d14.6378013!4d121.0345225!3m4!1s0x339aab172512390f:0x359326f7e9e2f93b!8m2!3d16.7796524!4d121.6981205"
+                    target="_blank"
+                    class="col-1 mt-1 mt-lg-2 d-flex"
+                    ><i class="fa-solid fa-location-pin"></i></a
+                  ><a
+                    class="col-11"
+                    href="https://www.google.com/maps/place/OBN+Gadgets/@16.7795767,121.6981194,21z/data=!4m12!1m6!3m5!1s0x3397c81910a0ad7f:0xe5db9ca75b4d67b5!2sHot+Gadgets!8m2!3d14.6378013!4d121.0345225!3m4!1s0x339aab172512390f:0x359326f7e9e2f93b!8m2!3d16.7796524!4d121.6981205"
+                    target="_blank"
+                    >Reymun 1 Bldg, San Mateo Rd. Alicia, Isabela</a
+                  >
+                </li>
+                <li class="row">
+                  <a class="col-1"><i class="fa-solid fa-phone"></i></a
+                  ><a class="col-11">975 811 2700 / 906 458 5017</a>
+                </li>
+                <li class="row">
+                  <a
+                    href="https://www.facebook.com/obn.gadgets"
+                    target="_blank"
+                    class="col-1"
+                    ><i class="fa-brands fa-square-facebook"></i></a
+                  ><a
+                    class="col-11"
+                    href="https://www.facebook.com/obn.gadgets"
+                    target="_blank"
+                    >fb.com/obn.gadgets</a
+                  >
+                </li>
+                <li class="row">
+                  <a
+                    href="https://www.m.me/obn.gadgets"
+                    target="_blank"
+                    class="col-1"
+                    ><i class="fa-brands fa-facebook-messenger"></i></a
+                  ><a
+                    class="col-11"
+                    href="https://www.m.me/obn.gadgets"
+                    target="_blank"
+                    >m.me/obn.gadgets</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="mx-3 footer-quick-link col-12 col-md-6">
+              <h4 class="">Quick Links</h4>
+              <ul class="d-flex d-md-block">
+                <li>
+                  <a class="me-1 me-sm-3 m-md-0" href="index.html">Home</a>
+                </li>
+                <li>
+                  <a class="mx-1 mx-sm-3 m-md-0" href="iphone.html">iPhone</a>
+                </li>
+
+                <li>
+                  <a class="mx-1 mx-sm-3 m-md-0 d-flex" href="#">
+                    <i
+                      class="d-flex align-items-center fa-brands fa-android d-block d-sm-none"
+                      >&nbsp;</i
+                    ><span class="d-none d-sm-block">Android&nbsp;</span> &
+                    Accessories</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- copyright-social-design-div  -->
+        <div
+          class="d-flex flex-column flex-lg-row align-items-center justify-content-between"
+        >
+          <div
+            class="my-1 my-lg-0 footer-bottom-items d-flex align-items-center"
+          >
+            <p>Copyright &copy; 2023 OBN Gadgets</p>
+          </div>
+          <div
+            class="my-1 my-lg-0 footer-bottom-items d-flex align-items-center"
+          >
+            <a
+              href="https://www.facebook.com/obn.gadgets"
+              target="_blank"
+              class="mx-2 fs-5"
+              ><i class="fa-brands fa-square-facebook"></i
+            ></a>
+            <a
+              href="https://www.m.me/obn.gadgets"
+              target="_blank"
+              class="mx-2 fs-5"
+              ><i class="fa-brands fa-facebook-messenger"></i
+            ></a>
+          </div>
+          <div
+            class="my-1 my-lg-0 footer-bottom-items d-flex align-items-center"
+          >
+            <p>Website designed by Marc Aaron</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
