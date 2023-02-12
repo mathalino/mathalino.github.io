@@ -144,6 +144,16 @@ nav i {
 .feature .feature-details h6 span {
   color: #03989e;
 }
+.feature .for-new {
+  position: relative;
+}
+.feature .for-new .new {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 150px;
+  height: 150px;
+}
 
 .quantity {
   max-width: 130px;
@@ -482,6 +492,18 @@ footer a:hover {
   white-space: nowrap;
 }
 
+@media screen and (max-width: 1300px) {
+  .feature .for-new .new {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media screen and (max-width: 1190px) {
+  .feature .for-new .new {
+    top: 150px;
+    left: 0;
+  }
+}
 @media screen and (max-width: 992px) {
   .hero .hero-text {
     background-color: #ffc60b;
@@ -492,6 +514,9 @@ footer a:hover {
   }
   .feature .feature-img {
     border-right: 1px solid rgba(94, 94, 94, 0.4588235294);
+  }
+  .feature .for-new .new {
+    top: 50px;
   }
   .product-details img {
     width: 50%;
@@ -507,6 +532,10 @@ footer a:hover {
   .user-details form {
     border: none;
   }
+  .feature .for-new .new {
+    width: 75px;
+    height: 75px;
+  }
 }
 @media screen and (max-width: 575px) {
   .feature .feature-img {
@@ -514,6 +543,13 @@ footer a:hover {
   }
   .feature .feature-details {
     padding: 0 10px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .feature .for-new .new {
+    width: 70px;
+    height: 70px;
+    top: 0;
   }
 }
 @media (hover) {
