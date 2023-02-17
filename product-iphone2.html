@@ -72,14 +72,33 @@
                 data-bs-toggle="dropdown"
                 role="button"
                 >Android & Accessories</a
-              ><ul class="dropdown-menu">
-                <li><a class="dropdown-item fw-bold" href="android.html">Android</a></li>
-                <li><a class="dropdown-item fw-bold" href="android-earphone.html">Earphone</a></li>
-                <li><a class="dropdown-item fw-bold" href="android-case.html">Phone Case</a></li>
-                <li><a class="dropdown-item fw-bold" href="android-charger.html">Charger</a></li>
-                <li><a class="dropdown-item fw-bold" href="android-other.html">Other</a></li>
-
-              
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item fw-bold" href="android.html"
+                    >Android</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item fw-bold" href="android-earphone.html"
+                    >Earphone</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item fw-bold" href="android-case.html"
+                    >Phone Case</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item fw-bold" href="android-charger.html"
+                    >Charger</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item fw-bold" href="android-other.html"
+                    >Other</a
+                  >
+                </li>
               </ul>
             </li>
 
@@ -158,56 +177,61 @@
       </div>
     </div>
 
-   <!-- offcanvas navbar -->
-   <div class="offcanvas offcanvas-start" id="navigation-bar">
-    <div class="offcanvas-header">
-      <img src="img/logo.png" alt="" class="rounded-circle" />
-      <h5 class="m-0">Menu</h5>
-      <button
-        type="button"
-        data-bs-dismiss="offcanvas"
-        class="btn-close btn-close-white"
-      ></button>
-    </div>
-    <div class="offcanvas-body" id="side-menu">
-     
-        <a href="index.html" class="p-3 btn d-flex">
-          Home </a
+    <!-- offcanvas navbar -->
+    <div class="offcanvas offcanvas-start" id="navigation-bar">
+      <div class="offcanvas-header">
+        <img src="img/logo.png" alt="" class="rounded-circle" />
+        <h5 class="m-0">Menu</h5>
+        <button
+          type="button"
+          data-bs-dismiss="offcanvas"
+          class="btn-close btn-close-white"
+        ></button>
+      </div>
+      <div class="offcanvas-body" id="side-menu">
+        <a href="index.html" class="p-3 btn d-flex"> Home </a>
+
+        <a
+          href="#"
+          data-bs-target="#how-to-buy"
+          data-bs-parent="#side-menu"
+          data-bs-toggle="modal"
+          class="p-3 btn d-flex"
+          >How to Order</a
         >
-        
-        <a href="#" data-bs-target="#how-to-buy" data-bs-parent="#side-menu" data-bs-toggle="modal" class="p-3 btn d-flex">How to Order</a>
-        <a href="iphone.html" class="p-3 btn d-flex ">
-          iPhone </a
-        >
-     
+        <a href="iphone.html" class="p-3 btn d-flex"> iPhone </a>
+
         <a
           data-bs-toggle="collapse"
-          
           data-bs-target="#accessories"
           class="p-3 btn d-flex justify-content-between align-items-center"
         >
-         Android & Accessories
+          Android & Accessories
 
           <i class="fa-solid fa-angle-right"></i>
         </a>
-        
-      
 
-      <div id="accessories" class="collapse">
-        <ul class="list-group">
-          <li class="p-3 list-group-item"><a href="android.html">Android</a></li>
-          <li class="p-3 list-group-item"><a href="android-earphone.html">Earphone</a></li>
-          <li class="p-3 list-group-item"><a href="android-case.html">Phone Case</a></li>
-          <li class="p-3 list-group-item"><a href="android-charger.html">Charger</a></li>
-          <li class="p-3 list-group-item">
-            <a href="android-other.html">Other</a>
-          </li>
-          
-        </ul>
+        <div id="accessories" class="collapse">
+          <ul class="list-group">
+            <li class="p-3 list-group-item">
+              <a href="android.html">Android</a>
+            </li>
+            <li class="p-3 list-group-item">
+              <a href="android-earphone.html">Earphone</a>
+            </li>
+            <li class="p-3 list-group-item">
+              <a href="android-case.html">Phone Case</a>
+            </li>
+            <li class="p-3 list-group-item">
+              <a href="android-charger.html">Charger</a>
+            </li>
+            <li class="p-3 list-group-item">
+              <a href="android-other.html">Other</a>
+            </li>
+          </ul>
+        </div>
       </div>
-        
     </div>
-  </div>
 
     <!-- offcanvas cart -->
     <div class="offcanvas offcanvas-end" id="cart">
@@ -225,15 +249,16 @@
       </div>
     </div>
 
-     <!-- offcanvas cart with item-->
-     <div class="offcanvas offcanvas-end cart-added" id="cart-added">
+    <!-- offcanvas cart with item-->
+    <div class="offcanvas offcanvas-end cart-added" id="cart-added">
       <div class="offcanvas-header">
         <img src="img/logo.png" alt="" class="rounded-circle" />
         <h5 class="m-0">Cart</h5>
         <button
           type="button"
           data-bs-dismiss="offcanvas"
-          class="btn-close btn-close-white"checkout
+          class="btn-close btn-close-white"
+          checkout
         ></button>
       </div>
       <div class="offcanvas-body">
@@ -264,7 +289,12 @@
           >
             <p><strong>Total:</strong> &#8369;38,999.00</p>
             <div>
-              <a href="checkout.html" type="button" id="checkout" class="btn px-4">
+              <a
+                href="checkout.html"
+                type="button"
+                id="checkout"
+                class="btn px-4"
+              >
                 Checkout
               </a>
             </div>
@@ -279,10 +309,15 @@
           <div class="d-flex col-lg-5 col-12 justify-content-center">
             <img src="img/iphone/iphone-12-pro-graphite-1.png" alt="" />
             <div class="mini-img">
-              <div class="my-2 border rounded-1"><a href="#"><img src="img/iphone/iphone-12-pro-graphite-1.png" class="rounded-3" alt=""></a></div>
-             
-
-          </div>
+              <div class="my-2 border rounded-1">
+                <a href="#"
+                  ><img
+                    src="img/iphone/iphone-12-pro-graphite-1.png"
+                    class="rounded-3"
+                    alt=""
+                /></a>
+              </div>
+            </div>
           </div>
           <div class="mt-5 mt-lg-0 ms-lg-5 d-flex flex-column col-12 col-lg-5">
             <h5 class="mb-4">
@@ -301,7 +336,13 @@
                 <input type="number" value="1" class="form-control" />
                 <button type="button" class="btn btn-secondary">-</button>
               </div>
-              <a href="#" data-bs-toggle="offcanvas" data-bs-target="#cart-added" type="button" class="mx-2 px-3 py-2 btn">
+              <a
+                href="#"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#cart-added"
+                type="button"
+                class="mx-2 px-3 py-2 btn"
+              >
                 Add to cart
               </a>
             </div>
@@ -320,11 +361,9 @@
             </div>
           </div>
         </div>
-       
-       
       </div>
     </section>
- <!-- for specs  -->
+    <!-- for specs  -->
     <section class="my-4 p-0 specs container border rounded-2">
       <div class="specs-details">
         <div class="p-2 specs-title sticky-top">
@@ -524,12 +563,15 @@
               </ul>
             </div>
             <div class="mx-3 footer-quick-link col-12 col-md-6">
-              <h4 class="">Quick Links</h4>
-              <ul class="d-flex d-md-block">
-                
-                <li><a class="me-3 m-md-0" href="iphone.html">iPhone</a></li>
-                
-                <li ><a class="mx-3 m-md-0 d-flex" href="android.html">Android & Accessories</a></li>
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a class="m-md-0" href="iphone.html">iPhone</a></li>
+
+                <li>
+                  <a class="m-md-0 d-flex" href="android.html"
+                    >Android & Accessories</a
+                  >
+                </li>
               </ul>
             </div>
           </div>
@@ -543,7 +585,9 @@
           >
             <p>Copyright &copy; 2023 OBN Gadgets</p>
           </div>
-          <div class="my-1 my-lg-0 footer-bottom-items d-flex align-items-center">
+          <div
+            class="my-1 my-lg-0 footer-bottom-items d-flex align-items-center"
+          >
             <a
               href="https://www.facebook.com/obn.gadgets"
               target="_blank"
