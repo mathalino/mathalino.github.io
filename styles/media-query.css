@@ -6,12 +6,27 @@ body {
   padding: 0;
   overflow-x: hidden;
 }
-@media (max-width: 1437px) {
+@media (max-width: 1789px) {
+  .rev-desk {
+    height: 17rem;
+  }
+  /* .review-img img{
+    width: auto; 
+    height: fit-content;
+  } */
+}
+@media (max-width: 1470px) {
   .section-6-content .get-start-btn {
     padding: 1rem 7rem;
   }
+  .rev-desk {
+    height: 19rem;
+  }
+  .time-to-fix-btn {
+    padding: 1.5rem 7rem;
+  }
 }
-@media screen and(max-width: 1200px) {
+@media screen and (max-width: 1200px) {
   .review-img img {
     height: 338px;
   }
@@ -44,6 +59,9 @@ body {
   }
   .rating-2 .ban-btn-new {
     width: 38%;
+  }
+  .time-to-fix-btn {
+    padding: 1.5rem 5rem;
   }
 }
 @media (max-width: 1091px) {
@@ -83,8 +101,9 @@ body {
   }
   .review-img img {
     width: 474px;
-    height: 250px;
+    /* height: 250px; */
     border-radius: 1rem;
+    margin-bottom: 0.3rem;
   }
   .review-img {
     width: 100%;
@@ -115,7 +134,7 @@ body {
     line-height: normal;
   }
   .combo-sec-product img {
-    width: 614px;
+    width: 426px;
     margin: 0.2rem auto 0;
   }
   .section-6-content p {
@@ -164,7 +183,7 @@ body {
     font-size: 1.2rem;
   }
   .rev-desk {
-    height: 22rem;
+    height: 21.5rem;
   }
 }
 @media (max-width: 991px) {
@@ -206,7 +225,7 @@ body {
   .sec2-p {
     color: #000;
     font-size: 1.5rem;
-    line-height: normal;
+    /* line-height: normal; */
     margin: 1rem 0;
   }
   .sec2-icon-img img {
@@ -235,8 +254,9 @@ body {
     border-radius: 32px;
   }
   .review-img img {
+    margin-bottom: 1.5rem;
     border-radius: 5px;
-    height: 400px;
+    /* height: 400px; */
   }
   .rev-desc {
     font-size: 0.9rem;
@@ -244,7 +264,7 @@ body {
     height: fit-content;
   }
   .rev-desk {
-    height: 20rem;
+    height: 15rem;
   }
   .combo h2 {
     margin-bottom: 0rem;
@@ -260,9 +280,9 @@ body {
     font-size: 2.4rem;
     line-height: normal;
   }
-  .sec-graph img {
+  /* .sec-graph img {
     width: 664px;
-  }
+  } */
   .combo-sec-product img {
     margin: 1rem auto;
   }
@@ -360,6 +380,15 @@ body {
   .sec2-div {
     font-size: 1.2rem;
     line-height: normal;
+  }
+  .time-to-fix-btn {
+    font-size: 24px;
+    padding: 1.22rem 6.1rem;
+  }
+}
+@media (max-width: 886px) {
+  .rev-desk {
+    height: 17rem;
   }
 }
 @media (max-width: 767px) {
@@ -529,7 +558,7 @@ body {
   .sec2-p {
     color: #050505;
     font-size: 18px;
-    line-height: 23px;
+    /* line-height: 23px; */
     margin: 1rem 0 2rem;
     font-weight: 500;
   }
@@ -726,15 +755,17 @@ body {
     font-size: 45px;
   }
   .pb_cntn ul li {
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 600;
     line-height: normal;
     width: 18rem;
     text-align: left;
+    padding-left: 0.2rem;
   }
   .pb_cntn ul li i {
     font-size: 14px;
     line-height: 9px;
+    padding-right: 0.2rem;
   }
   .pbc_price .pr_price {
     font-size: 3rem;
@@ -1220,6 +1251,17 @@ body {
   .pbc_price .pr_price sub {
     font-size: 1.2rem;
   }
+  .prev,
+  .next {
+    padding: 0px 8px;
+  }
+  .next,
+  .prev i {
+    font-size: 2rem;
+  }
+  .rev-data-box .rating-stars span {
+    font-size: 14px;
+  }
 }
 @media screen and (max-width: 428px) {
   .new-banner .Sublingual-cont {
@@ -1265,7 +1307,7 @@ body {
   }
   .sec2-p {
     font-size: 0.9rem;
-    line-height: normal;
+    /* line-height: normal; */
   }
   .review-img img {
     height: 26rem;
@@ -1297,7 +1339,7 @@ body {
     width: 21rem;
   }
   .pbc_price .pr_price {
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-align: left;
     padding-bottom: 1.5rem;
   }
@@ -1568,10 +1610,10 @@ body {
   .sec2-p {
     color: #000;
     font-size: 0.7rem;
-    line-height: normal;
+    /* line-height: normal; */
     margin-top: 0.5rem;
     margin-bottom: -12px;
-    padding: 0 0.3rem;
+    padding: 0 1.3rem;
     font-weight: 600;
   }
   .why_choose_icon_mobile .wc_slick p {
@@ -1716,5 +1758,17 @@ body {
   }
   .rev-desk-stars img {
     width: 80px;
+  }
+  .verified-icon span {
+    margin-left: 0rem;
+  }
+  .verified-icon {
+    gap: 0.1rem;
+  }
+  .ps_badge {
+    margin-bottom: 4rem;
+  }
+  .section-6 {
+    padding: 5px 0;
   }
 }

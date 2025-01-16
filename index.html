@@ -15,17 +15,17 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-
-    <!-- Font Style -->
+    <!-- Bootstrap Icon -->
     <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- Font Style -->
+    <!-- <link
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" /> -->
+    /> -->
+
     <!-- fontawesome -->
     <link
       href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
@@ -52,7 +52,7 @@
   <body>
     <main>
       <!-- top strip -->
-      <div class="top-strip">
+      <div class="top-strip" id="top-header">
         <div class="container">
           <div class="row align-items-center justify-content-center">
             <div class="col-xl-12 d-none d-lg-block">
@@ -63,7 +63,7 @@
                   alt=""
                 />
                 <span class="fall-sale">Winter Sale</span>
-                <strong>Save Up to 30%!</strong>
+                <strong class="fw-bolder">Save Up to 30%!</strong>
                 &nbsp;100% Online Free Prescription & Free Rush Shipping
               </p>
             </div>
@@ -85,7 +85,7 @@
         class="header navbar navbar-expand-lg sticky-top bg-white text-center"
       >
         <div class="container d-flex justify-content-center align-items-center">
-          <a class="navbar-brand order-lg-1 order-2 me-0" href="index.html">
+          <a class="navbar-brand order-lg-1 order-2 me-0" href="#top-header">
             <img
               src="assets/images/Sermorelin logo everlife.webp"
               class="img-fluid"
@@ -107,7 +107,10 @@
               <div class="Sublingual-cont">
                 <div>
                   <h3>
-                    <img src="/assets/images/new-flag.webp" />
+                    <img
+                      src="/assets/images/new-flag.webp"
+                      alt="red-new-flag"
+                    />
                   </h3>
                 </div>
 
@@ -121,11 +124,13 @@
                   <img
                     src="/assets/images/SERMORELIN-Prod-sec1.webp"
                     class="img-fluid main-product"
+                    alt="main-product"
                   />
                   <!-- curve -->
                   <img
                     src="./assets/images/curve-arw.webp"
                     class="img-fluid curl"
+                    alt="curved-arrow"
                   />
                   <!-- curve -->
                 </div>
@@ -389,29 +394,17 @@
             <div class="col-lg-7">
               <ul class="sec3-list">
                 <li>
-                  <img
-                    src="/assets/images/sec3-1 copy.webp"
-                    class="img-fluid"
-                    alt=""
-                  />
+                  <img src="/assets/images/sec3-1 copy.webp" alt="" />
                   <p><span>Boosts Natural Growth Hormone</span> production</p>
                 </li>
 
                 <li>
-                  <img
-                    src="/assets/images/sec3-2 copy.webp"
-                    class="img-fluid"
-                    alt=""
-                  />
+                  <img src="/assets/images/sec3-2 copy.webp" alt="" />
                   <p><span> Promotes Restful Sleep </span> and recovery</p>
                 </li>
 
                 <li>
-                  <img
-                    src="/assets/images/sec3-3 copy.webp"
-                    class="img-fluid"
-                    alt=""
-                  />
+                  <img src="/assets/images/sec3-3 copy.webp" alt="" />
                   <p><span>Enhances Energy and Mental Clarity</span></p>
                 </li>
               </ul>
@@ -420,27 +413,15 @@
             <div class="col-lg-5">
               <ul class="sec3-list">
                 <li>
-                  <img
-                    src="/assets/images/sec3-4 copy.webp"
-                    class="img-fluid"
-                    alt=""
-                  />
+                  <img src="/assets/images/sec3-4 copy.webp" alt="" />
                   <p><span>Supports Lean Muscle</span> and metabolism</p>
                 </li>
                 <li>
-                  <img
-                    src="/assets/images/sec3-5 copy.webp"
-                    class="img-fluid"
-                    alt=""
-                  />
+                  <img src="/assets/images/sec3-5 copy.webp" alt="" />
                   <p><span> Improves Skin and Hair Health</span></p>
                 </li>
                 <li>
-                  <img
-                    src="/assets/images/sec3-6 copy.webp"
-                    class="img-fluid"
-                    alt=""
-                  />
+                  <img src="/assets/images/sec3-6 copy.webp" alt="" />
                   <p><span> Manages</span> Chronic Insomnia</p>
                 </li>
               </ul>
@@ -484,25 +465,9 @@
                       tablets are simple to take. No issues so far, and it feels
                       good to have more energy creeping back little by little."
                     </p>
-                    <!-- <ul class="rev-desk-stars d-flex">
-                      <li>
-                        <a href="#"><i class="fa fa-star fa-2x"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fa fa-star fa-2x"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fa fa-star fa-2x"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fa fa-star fa-2x"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fa fa-star fa-2x"></i></a>
-                      </li>
-                    </ul> -->
+
                     <div class="rev-desk-stars">
-                      <img src="/assets/images/star.png" alt="" />
+                      <img src="/assets/images/star.webp" alt="" />
                     </div>
 
                     <h6 class="reviewer">Jane W.</h6>
@@ -527,26 +492,8 @@
                       easier than I expected. I just pop one under my tongue,
                       and that’s it—no injections or complicated instructions."
                     </p>
-
-                    <!-- <ul class="rev-desk-stars d-flex">
-                      <li>
-                        <a href="#"><i class="fa fa-star fa-2x"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fa fa-star fa-2x"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fa fa-star fa-2x"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fa fa-star fa-2x"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fa fa-star fa-2x"></i></a>
-                      </li>
-                    </ul> -->
                     <div class="rev-desk-stars">
-                      <img src="/assets/images/star.png" alt="" />
+                      <img src="/assets/images/star.webp" alt="" />
                     </div>
 
                     <p class="reviewer">Sarah M.</p>
@@ -571,27 +518,8 @@
                       but it’s good to know I’m on something that fits my
                       schedule without being a hassle."
                     </p>
-
-                    <!-- <ul class="rev-desk-stars d-flex">
-                      <li>
-                        <a href="#"><i class="fa fa-star fa-2x"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fa fa-star fa-2x"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fa fa-star fa-2x"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fa fa-star fa-2x"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fa fa-star fa-2x"></i></a>
-                      </li>
-                    </ul> -->
-
                     <div class="rev-desk-stars">
-                      <img src="/assets/images/star.png" alt="" />
+                      <img src="/assets/images/star.webp" alt="" />
                     </div>
 
                     <p class="reviewer">Ryan R.</p>
@@ -616,26 +544,8 @@
                       tablets are simple to take. No issues so far, and it feels
                       good to have more energy creeping back little by little."
                     </p>
-                    <!-- <ul class="rev-desk-stars d-flex">
-                      <li>
-                        <a href="#"><i class="fa fa-star fa-2x"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fa fa-star fa-2x"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fa fa-star fa-2x"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fa fa-star fa-2x"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fa fa-star fa-2x"></i></a>
-                      </li>
-                    </ul> -->
-
                     <div class="rev-desk-stars">
-                      <img src="/assets/images/star.png" alt="" />
+                      <img src="/assets/images/star.webp" alt="" />
                     </div>
 
                     <p class="reviewer">Donald T.</p>
@@ -660,26 +570,8 @@
                       easier than I expected. I just pop one under my tongue,
                       and that’s it—no injections or complicated instructions."
                     </p>
-                    <!-- <ul class="rev-desk-stars d-flex">
-                      <li>
-                        <a href="#"><i class="fa fa-star fa-2x"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fa fa-star fa-2x"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fa fa-star fa-2x"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fa fa-star fa-2x"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fa fa-star fa-2x"></i></a>
-                      </li>
-                    </ul> -->
-
                     <div class="rev-desk-stars">
-                      <img src="/assets/images/star.png" alt="" />
+                      <img src="/assets/images/star.webp" alt="" />
                     </div>
 
                     <p class="reviewer">Ronald A.</p>
@@ -693,7 +585,10 @@
                   <div class="progress-bar"></div>
                 </div>
                 <!-- Left/Right Buttons -->
-                <button class="slick-prev d-lg-block d-none">
+                <button
+                  class="slick-prev d-lg-block d-none"
+                  aria-label="preview-buttom"
+                >
                   <div class="slick-btn-icon">
                     <img
                       src="/assets/images/rating-left-arw.webp"
@@ -709,7 +604,10 @@
                   ></span
                 ></span>
 
-                <button class="slick-next d-lg-block d-none">
+                <button
+                  class="slick-next d-lg-block d-none"
+                  aria-label="next-buttom"
+                >
                   <div class="slick-btn-icon">
                     <img
                       src="/assets/images/rating-rgt-arw.webp"
@@ -741,6 +639,7 @@
                   <img
                     src="./assets/images/1ST PHOTO copy.webp"
                     class="img-fluid"
+                    alt=""
                   />
                 </div>
 
@@ -748,35 +647,43 @@
                   <img
                     src="./assets/images/sec-5 carousel 2.webp"
                     class="img-fluid"
+                    alt=""
                   />
                 </div>
 
                 <div class="mySlides">
                   <img
-                    src="./assets/images/sec-5 carousel 3.webp"
+                    src="./assets/images/carousel 3.webp"
                     class="img-fluid"
+                    alt=""
                   />
                 </div>
 
                 <div class="mySlides">
-                  <img src="./assets/images/4TH PHOTO.webp" class="img-fluid" />
+                  <img
+                    src="./assets/images/4TH PHOTO.webp"
+                    class="img-fluid"
+                    alt=""
+                  />
                 </div>
 
-                <a class="prev" onclick="plusSlides(-1)">
-                  <img
+                <a class="prev rounded-circle" onclick="plusSlides(-1)">
+                  <!-- <img
                     src="./assets/images/rating-left-arw.webp"
                     class="img-fluid"
                     alt=""
                     srcset=""
-                  />
+                  /> -->
+                  <i class="bi bi-chevron-left text-black"></i>
                 </a>
-                <a class="next" onclick="plusSlides(1)">
-                  <img
+                <a class="next rounded-circle" onclick="plusSlides(1)">
+                  <!-- <img
                     src="./assets/images/rating-rgt-arw.webp"
                     class="img-fluid"
                     alt=""
                     srcset=""
-                  />
+                  /> -->
+                  <i class="bi bi-chevron-right text-black"></i>
                 </a>
 
                 <div class="caption-container">
@@ -787,7 +694,7 @@
                   <div class="column">
                     <img
                       class="demo cursor"
-                      src="./assets/images/1ST PHOTO copy.webp"
+                      src="./assets/images/1ST PHOTO copy (1).webp"
                       onclick="currentSlide(1)"
                       alt=""
                     />
@@ -795,7 +702,7 @@
                   <div class="column">
                     <img
                       class="demo cursor"
-                      src="./assets/images/sec-5 carousel 2.webp"
+                      src="./assets/images/sec-5 carousel 2 (1).webp"
                       onclick="currentSlide(2)"
                       alt=""
                     />
@@ -803,7 +710,7 @@
                   <div class="column">
                     <img
                       class="demo cursor"
-                      src="./assets/images/sec-5 carousel 3.webp"
+                      src="./assets/images/sec-5 carousel 3 (1).webp"
                       onclick="currentSlide(3)"
                       alt=""
                     />
@@ -811,7 +718,7 @@
                   <div class="column">
                     <img
                       class="demo cursor"
-                      src="./assets/images/4TH PHOTO.webp"
+                      src="./assets/images/4TH PHOTO (1).webp"
                       onclick="currentSlide(4)"
                       alt=""
                     />
@@ -963,195 +870,219 @@
               <div class="wrapper py-1 tick-strip">
                 <div class="marquee">
                   <span>
-                    <img
+                    <!-- <img
                       class="ms-3 me-3 tick-img"
                       src="/assets/images/tick.webp"
                       alt=""
-                    />
+                    /> -->
+                    <i class="bi bi-check-circle ms-3 me-3"></i>
                     <span>Prescription Sleep medication</span>
                   </span>
                   <span>
-                    <img
+                    <!-- <img
                       class="ms-3 me-3 tick-img"
                       src="/assets/images/tick.webp"
                       alt=""
-                    />
+                    /> -->
+                    <i class="bi bi-check-circle ms-3 me-3"></i>
                     <span>Doctor Prescribed</span>
                   </span>
                   <span>
-                    <img
+                    <!-- <img
                       class="ms-3 me-3 tick-img"
                       src="/assets/images/tick.webp"
                       alt=""
-                    />
+                    /> -->
+                    <i class="bi bi-check-circle ms-3 me-3"></i>
                     <span>60 Day Money Back Guarantee</span>
                   </span>
                   <span>
-                    <img
+                    <!-- <img
                       class="ms-3 me-3 tick-img"
                       src="/assets/images/tick.webp"
                       alt=""
-                    />
+                    /> -->
+                    <i class="bi bi-check-circle ms-3 me-3"></i>
                     <span>Prescription Sleep medication</span>
                   </span>
                   <span>
-                    <img
+                    <!-- <img
                       class="ms-3 me-3 tick-img"
                       src="/assets/images/tick.webp"
                       alt=""
-                    />
+                    /> -->
+                    <i class="bi bi-check-circle ms-3 me-3"></i>
                     <span>Doctor Prescribed</span>
                   </span>
                   <span>
-                    <img
+                    <!-- <img
                       class="ms-3 me-3 tick-img"
                       src="/assets/images/tick.webp"
                       alt=""
-                    />
+                    /> -->
+                    <i class="bi bi-check-circle ms-3 me-3"></i>
                     <span>60 Day Money Back Guarantee</span>
                   </span>
                   <span>
-                    <img
+                    <!-- <img
                       class="ms-3 me-3 tick-img"
                       src="/assets/images/tick.webp"
                       alt=""
-                    />
+                    /> -->
+                    <i class="bi bi-check-circle ms-3 me-3"></i>
                     <span>Prescription Sleep medication</span>
                   </span>
                   <span>
-                    <img
+                    <!-- <img
                       class="ms-3 me-3 tick-img"
                       src="/assets/images/tick.webp"
                       alt=""
-                    />
+                    /> -->
+                    <i class="bi bi-check-circle ms-3 me-3"></i>
                     <span>Doctor Prescribed</span>
                   </span>
                   <span>
-                    <img
+                    <!-- <img
                       class="ms-3 me-3 tick-img"
                       src="/assets/images/tick.webp"
                       alt=""
-                    />
+                    /> -->
+                    <i class="bi bi-check-circle ms-3 me-3"></i>
                     <span>60 Day Money Back Guarantee</span>
                   </span>
                   <span>
-                    <img
+                    <!-- <img
                       class="ms-3 me-3 tick-img"
                       src="/assets/images/tick.webp"
                       alt=""
-                    />
+                    /> -->
+                    <i class="bi bi-check-circle ms-3 me-3"></i>
                     <span>Prescription Sleep medication</span>
                   </span>
                   <span>
-                    <img
+                    <!-- <img
                       class="ms-3 me-3 tick-img"
                       src="/assets/images/tick.webp"
                       alt=""
-                    />
+                    /> -->
+                    <i class="bi bi-check-circle ms-3 me-3"></i>
                     <span>Doctor Prescribed</span>
                   </span>
                   <span>
-                    <img
+                    <!-- <img
                       class="ms-3 me-3 tick-img"
                       src="/assets/images/tick.webp"
                       alt=""
-                    />
+                    /> -->
+                    <i class="bi bi-check-circle ms-3 me-3"></i>
                     <span>60 Day Money Back Guarantee</span>
                   </span>
                   <span>
-                    <img
+                    <!-- <img
                       class="ms-3 me-3 tick-img"
                       src="/assets/images/tick.webp"
                       alt=""
-                    />
+                    /> -->
+                    <i class="bi bi-check-circle ms-3 me-3"></i>
                     <span>Prescription Sleep medication</span>
                   </span>
                   <span>
-                    <img
+                    <!-- <img
                       class="ms-3 me-3 tick-img"
                       src="/assets/images/tick.webp"
                       alt=""
-                    />
+                    /> -->
+                    <i class="bi bi-check-circle ms-3 me-3"></i>
                     <span>Doctor Prescribed</span>
                   </span>
                   <span>
-                    <img
+                    <!-- <img
                       class="ms-3 me-3 tick-img"
                       src="/assets/images/tick.webp"
                       alt=""
-                    />
+                    /> -->
+                    <i class="bi bi-check-circle ms-3 me-3"></i>
                     <span>60 Day Money Back Guarantee</span>
                   </span>
                   <span>
-                    <img
+                    <!-- <img
                       class="ms-3 me-3 tick-img"
                       src="/assets/images/tick.webp"
                       alt=""
-                    />
+                    /> -->
+                    <i class="bi bi-check-circle ms-3 me-3"></i>
                     <span>Prescription Sleep medication</span>
                   </span>
                   <span>
-                    <img
+                    <!-- <img
                       class="ms-3 me-3 tick-img"
                       src="/assets/images/tick.webp"
                       alt=""
-                    />
+                    /> -->
+                    <i class="bi bi-check-circle ms-3 me-3"></i>
                     <span>Doctor Prescribed</span>
                   </span>
                   <span>
-                    <img
+                    <!-- <img
                       class="ms-3 me-3 tick-img"
                       src="/assets/images/tick.webp"
                       alt=""
-                    />
+                    /> -->
+                    <i class="bi bi-check-circle ms-3 me-3"></i>
                     <span>60 Day Money Back Guarantee</span>
                   </span>
                   <span>
-                    <img
+                    <!-- <img
                       class="ms-3 me-3 tick-img"
                       src="/assets/images/tick.webp"
                       alt=""
-                    />
+                    /> -->
+                    <i class="bi bi-check-circle ms-3 me-3"></i>
                     <span>Prescription Sleep medication</span>
                   </span>
                   <span>
-                    <img
+                    <!-- <img
                       class="ms-3 me-3 tick-img"
                       src="/assets/images/tick.webp"
                       alt=""
-                    />
+                    /> -->
+                    <i class="bi bi-check-circle ms-3 me-3"></i>
                     <span>Doctor Prescribed</span>
                   </span>
                   <span>
-                    <img
+                    <!-- <img
                       class="ms-3 me-3 tick-img"
                       src="/assets/images/tick.webp"
                       alt=""
-                    />
+                    /> -->
+                    <i class="bi bi-check-circle ms-3 me-3"></i>
                     <span>60 Day Money Back Guarantee</span>
                   </span>
                   <span>
-                    <img
+                    <!-- <img
                       class="ms-3 me-3 tick-img"
                       src="/assets/images/tick.webp"
                       alt=""
-                    />
+                    /> -->
+                    <i class="bi bi-check-circle ms-3 me-3 ms-3 me-3"></i>
                     <span>Prescription Sleep medication</span>
                   </span>
                   <span>
-                    <img
+                    <!-- <img
                       class="ms-3 me-3 tick-img"
                       src="/assets/images/tick.webp"
                       alt=""
-                    />
+                    /> -->
+                    <i class="bi bi-check-circle ms-3 me-3 ms-3 me-3"></i>
                     <span>Doctor Prescribed</span>
                   </span>
                   <span>
-                    <img
+                    <!-- <img
                       class="ms-3 me-3 tick-img"
                       src="/assets/images/tick.webp"
                       alt=""
-                    />
+                    /> -->
+                    <i class="bi bi-check-circle ms-3 me-3 ms-3 me-3"></i>
                     <span>60 Day Money Back Guarantee</span>
                   </span>
                 </div>
@@ -1441,25 +1372,8 @@
                       tablets are simple to take. No issues so far, and it feels
                       good to have more energy creeping back little by little."
                     </p>
-                    <!-- <ul class="rev-desk-stars d-flex">
-                      <li>
-                        <a href="#"><i class="fa fa-star fa-2x"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fa fa-star fa-2x"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fa fa-star fa-2x"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fa fa-star fa-2x"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fa fa-star fa-2x"></i></a>
-                      </li>
-                    </ul> -->
                     <div class="rev-desk-stars">
-                      <img src="/assets/images/star.png" alt="" />
+                      <img src="/assets/images/star.webp" alt="" />
                     </div>
 
                     <h6 class="reviewer">Helen C.</h6>
@@ -1483,26 +1397,8 @@
                       easier than I expected. I just pop one under my tongue,
                       and that’s it—no injections or complicated instructions."
                     </p>
-                    <!-- <ul class="rev-desk-stars d-flex">
-                      <li>
-                        <a href="#"><i class="fa fa-star fa-2x"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fa fa-star fa-2x"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fa fa-star fa-2x"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fa fa-star fa-2x"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fa fa-star fa-2x"></i></a>
-                      </li>
-                    </ul> -->
-
                     <div class="rev-desk-stars">
-                      <img src="/assets/images/star.png" alt="" />
+                      <img src="/assets/images/star.webp" alt="" />
                     </div>
 
                     <p class="reviewer">Karen W.</p>
@@ -1522,25 +1418,8 @@
                       but it’s good to know I’m on something that fits my
                       schedule without being a hassle."
                     </p>
-                    <!-- <ul class="rev-desk-stars d-flex">
-                      <li>
-                        <a href="#"><i class="fa fa-star fa-2x"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fa fa-star fa-2x"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fa fa-star fa-2x"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fa fa-star fa-2x"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fa fa-star fa-2x"></i></a>
-                      </li>
-                    </ul> -->
                     <div class="rev-desk-stars">
-                      <img src="/assets/images/star.png" alt="" />
+                      <img src="/assets/images/star.webp" alt="" />
                     </div>
 
                     <p class="reviewer">Mark J.</p>
@@ -1564,26 +1443,8 @@
                       the Sermorelin tablets—just dissolve it under your tongue,
                       and you’re good to go. No stress, no mess."
                     </p>
-                    <!-- <ul class="rev-desk-stars d-flex">
-                      <li>
-                        <a href="#"><i class="fa fa-star fa-2x"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fa fa-star fa-2x"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fa fa-star fa-2x"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fa fa-star fa-2x"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fa fa-star fa-2x"></i></a>
-                      </li>
-                    </ul> -->
-
                     <div class="rev-desk-stars">
-                      <img src="/assets/images/star.png" alt="" />
+                      <img src="/assets/images/star.webp" alt="" />
                     </div>
 
                     <p class="reviewer">Richard P.</p>
@@ -1607,26 +1468,8 @@
                       but it’s good to know I’m on something that fits my
                       schedule without being a hassle."
                     </p>
-                    <!-- <ul class="rev-desk-stars d-flex">
-                      <li>
-                        <a href="#"><i class="fa fa-star fa-2x"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fa fa-star fa-2x"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fa fa-star fa-2x"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fa fa-star fa-2x"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fa fa-star fa-2x"></i></a>
-                      </li>
-                    </ul> -->
-
                     <div class="rev-desk-stars">
-                      <img src="/assets/images/star.png" alt="" />
+                      <img src="/assets/images/star.webp" alt="" />
                     </div>
 
                     <p class="reviewer">John S.</p>
@@ -1692,29 +1535,30 @@
                 <div class="d-flex align-items-center">
                   <span class="rev-customer">John D.</span>
                   <div class="verified-icon d-flex">
-                    <img
+                    <!-- <img
                       src="/assets/images/verified-badge.webp"
                       class="img-fluid"
                       alt=""
-                    />
+                    /> -->
+                    <i class="bi bi-patch-check-fill fa-lg ms-1 ms-1"></i>
                     <span>Verified</span>
                   </div>
                 </div>
                 <ul class="rating-stars d-flex align-items-center">
                   <li>
-                    <a href="#"><i class="fa fa-star fa-2x"></i></a>
+                    <span><i class="fa fa-star"></i></span>
                   </li>
                   <li>
-                    <a href="#"><i class="fa fa-star fa-2x"></i></a>
+                    <span><i class="fa fa-star"></i></span>
                   </li>
                   <li>
-                    <a href="#"><i class="fa fa-star fa-2x"></i></a>
+                    <span><i class="fa fa-star"></i></span>
                   </li>
                   <li>
-                    <a href="#"><i class="fa fa-star fa-2x"></i></a>
+                    <span><i class="fa fa-star"></i></span>
                   </li>
                   <li>
-                    <a href="#"><i class="fa fa-star fa-2x"></i></a>
+                    <span><i class="fa fa-star"></i></span>
                   </li>
                 </ul>
                 <p class="mb-0">
@@ -1726,29 +1570,30 @@
                 <div class="d-flex">
                   <span class="rev-customer">Emily R.</span>
                   <div class="verified-icon d-flex align-items-center">
-                    <img
+                    <!-- <img
                       src="/assets/images/verified-badge.webp"
                       class="img-fluid"
                       alt=""
-                    />
+                    /> -->
+                    <i class="bi bi-patch-check-fill fa-lg ms-1"></i>
                     <span>Verified</span>
                   </div>
                 </div>
                 <ul class="rating-stars d-flex align-items-center">
                   <li>
-                    <a href="#"><i class="fa fa-star fa-2x"></i></a>
+                    <span><i class="fa fa-star"></i></span>
                   </li>
                   <li>
-                    <a href="#"><i class="fa fa-star fa-2x"></i></a>
+                    <span><i class="fa fa-star"></i></span>
                   </li>
                   <li>
-                    <a href="#"><i class="fa fa-star fa-2x"></i></a>
+                    <span><i class="fa fa-star"></i></span>
                   </li>
                   <li>
-                    <a href="#"><i class="fa fa-star fa-2x"></i></a>
+                    <span><i class="fa fa-star"></i></span>
                   </li>
                   <li>
-                    <a href="#"><i class="fa fa-star fa-2x"></i></a>
+                    <span><i class="fa fa-star"></i></span>
                   </li>
                 </ul>
                 <p class="mb-0">
@@ -1760,29 +1605,30 @@
                 <div class="d-flex align-items-center">
                   <span class="rev-customer">Michael T.</span>
                   <div class="verified-icon d-flex">
-                    <img
+                    <!-- <img
                       src="/assets/images/verified-badge.webp"
                       class="img-fluid"
                       alt=""
-                    />
+                    /> -->
+                    <i class="bi bi-patch-check-fill fa-lg ms-1"></i>
                     <span>Verified</span>
                   </div>
                 </div>
                 <ul class="rating-stars d-flex">
                   <li>
-                    <a href="#"><i class="fa fa-star fa-2x"></i></a>
+                    <span><i class="fa fa-star"></i></span>
                   </li>
                   <li>
-                    <a href="#"><i class="fa fa-star fa-2x"></i></a>
+                    <span><i class="fa fa-star"></i></span>
                   </li>
                   <li>
-                    <a href="#"><i class="fa fa-star fa-2x"></i></a>
+                    <span><i class="fa fa-star"></i></span>
                   </li>
                   <li>
-                    <a href="#"><i class="fa fa-star fa-2x"></i></a>
+                    <span><i class="fa fa-star"></i></span>
                   </li>
                   <li>
-                    <a href="#"><i class="fa fa-star fa-2x"></i></a>
+                    <span><i class="fa fa-star"></i></span>
                   </li>
                 </ul>
                 <p class="mb-0">
@@ -1794,29 +1640,30 @@
                 <div class="d-flex align-items-center">
                   <span class="rev-customer">David P.</span>
                   <div class="verified-icon d-flex">
-                    <img
+                    <!-- <img
                       src="/assets/images/verified-badge.webp"
                       class="img-fluid"
                       alt=""
-                    />
+                    /> -->
+                    <i class="bi bi-patch-check-fill fa-lg ms-1"></i>
                     <span>Verified</span>
                   </div>
                 </div>
                 <ul class="rating-stars d-flex">
                   <li>
-                    <a href="#"><i class="fa fa-star fa-2x"></i></a>
+                    <span><i class="fa fa-star"></i></span>
                   </li>
                   <li>
-                    <a href="#"><i class="fa fa-star fa-2x"></i></a>
+                    <span><i class="fa fa-star"></i></span>
                   </li>
                   <li>
-                    <a href="#"><i class="fa fa-star fa-2x"></i></a>
+                    <span><i class="fa fa-star"></i></span>
                   </li>
                   <li>
-                    <a href="#"><i class="fa fa-star fa-2x"></i></a>
+                    <span><i class="fa fa-star"></i></span>
                   </li>
                   <li>
-                    <a href="#"><i class="fa fa-star fa-2x"></i></a>
+                    <span><i class="fa fa-star"></i></span>
                   </li>
                 </ul>
                 <p class="mb-0">
@@ -1828,29 +1675,30 @@
                 <div class="d-flex align-items-center">
                   <span class="rev-customer">James B.</span>
                   <div class="verified-icon d-flex">
-                    <img
+                    <!-- <img
                       src="/assets/images/verified-badge.webp"
                       class="img-fluid"
                       alt=""
-                    />
+                    /> -->
+                    <i class="bi bi-patch-check-fill fa-lg ms-1"></i>
                     <span>Verified</span>
                   </div>
                 </div>
                 <ul class="rating-stars d-flex align-items-center">
                   <li>
-                    <a href="#"><i class="fa fa-star fa-2x"></i></a>
+                    <span><i class="fa fa-star"></i></span>
                   </li>
                   <li>
-                    <a href="#"><i class="fa fa-star fa-2x"></i></a>
+                    <span><i class="fa fa-star"></i></span>
                   </li>
                   <li>
-                    <a href="#"><i class="fa fa-star fa-2x"></i></a>
+                    <span><i class="fa fa-star"></i></span>
                   </li>
                   <li>
-                    <a href="#"><i class="fa fa-star fa-2x"></i></a>
+                    <span><i class="fa fa-star"></i></span>
                   </li>
                   <li>
-                    <a href="#"><i class="fa fa-star fa-2x"></i></a>
+                    <span><i class="fa fa-star"></i></span>
                   </li>
                 </ul>
                 <p class="mb-0">
@@ -1862,29 +1710,30 @@
                 <div class="d-flex align-items-center">
                   <span class="rev-customer">Sophia L.</span>
                   <div class="verified-icon d-flex">
-                    <img
+                    <!-- <img
                       src="/assets/images/verified-badge.webp"
                       class="img-fluid"
                       alt=""
-                    />
+                    /> -->
+                    <i class="bi bi-patch-check-fill fa-lg ms-1"></i>
                     <span>Verified</span>
                   </div>
                 </div>
                 <ul class="rating-stars d-flex align-items-center">
                   <li>
-                    <a href="#"><i class="fa fa-star fa-2x"></i></a>
+                    <span><i class="fa fa-star"></i></span>
                   </li>
                   <li>
-                    <a href="#"><i class="fa fa-star fa-2x"></i></a>
+                    <span><i class="fa fa-star"></i></span>
                   </li>
                   <li>
-                    <a href="#"><i class="fa fa-star fa-2x"></i></a>
+                    <span><i class="fa fa-star"></i></span>
                   </li>
                   <li>
-                    <a href="#"><i class="fa fa-star fa-2x"></i></a>
+                    <span><i class="fa fa-star"></i></span>
                   </li>
                   <li>
-                    <a href="#"><i class="fa fa-star fa-2x"></i></a>
+                    <span><i class="fa fa-star"></i></span>
                   </li>
                 </ul>
                 <p class="mb-0">
@@ -1896,29 +1745,30 @@
                 <div class="d-flex align-items-center">
                   <span class="rev-customer">Ashley M.</span>
                   <div class="verified-icon d-flex">
-                    <img
+                    <!-- <img
                       src="/assets/images/verified-badge.webp"
                       class="img-fluid"
                       alt=""
-                    />
+                    /> -->
+                    <i class="bi bi-patch-check-fill fa-lg ms-1"></i>
                     <span>Verified</span>
                   </div>
                 </div>
                 <ul class="rating-stars d-flex align-items-center">
                   <li>
-                    <a href="#"><i class="fa fa-star fa-2x"></i></a>
+                    <span><i class="fa fa-star"></i></span>
                   </li>
                   <li>
-                    <a href="#"><i class="fa fa-star fa-2x"></i></a>
+                    <span><i class="fa fa-star"></i></span>
                   </li>
                   <li>
-                    <a href="#"><i class="fa fa-star fa-2x"></i></a>
+                    <span><i class="fa fa-star"></i></span>
                   </li>
                   <li>
-                    <a href="#"><i class="fa fa-star fa-2x"></i></a>
+                    <span><i class="fa fa-star"></i></span>
                   </li>
                   <li>
-                    <a href="#"><i class="fa fa-star fa-2x"></i></a>
+                    <span><i class="fa fa-star"></i></span>
                   </li>
                 </ul>
                 <p class="mb-0">
@@ -1930,29 +1780,30 @@
                 <div class="d-flex align-items-center">
                   <span class="rev-customer">Ryan C.</span>
                   <div class="verified-icon d-flex">
-                    <img
+                    <!-- <img
                       src="/assets/images/verified-badge.webp"
                       class="img-fluid"
                       alt=""
-                    />
+                    /> -->
+                    <i class="bi bi-patch-check-fill fa-lg ms-1"></i>
                     <span>Verified</span>
                   </div>
                 </div>
                 <ul class="rating-stars d-flex align-items-center">
                   <li>
-                    <a href="#"><i class="fa fa-star fa-2x"></i></a>
+                    <span><i class="fa fa-star"></i></span>
                   </li>
                   <li>
-                    <a href="#"><i class="fa fa-star fa-2x"></i></a>
+                    <span><i class="fa fa-star"></i></span>
                   </li>
                   <li>
-                    <a href="#"><i class="fa fa-star fa-2x"></i></a>
+                    <span><i class="fa fa-star"></i></span>
                   </li>
                   <li>
-                    <a href="#"><i class="fa fa-star fa-2x"></i></a>
+                    <span><i class="fa fa-star"></i></span>
                   </li>
                   <li>
-                    <a href="#"><i class="fa fa-star fa-2x"></i></a>
+                    <span><i class="fa fa-star"></i></span>
                   </li>
                 </ul>
                 <p class="mb-0">
@@ -1983,8 +1834,8 @@
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#collapseOne"
-                      aria-expanded="true"
-                      aria-controls="#collapseOne"
+                      aria-expanded="false"
+                      aria-controls="collapseOne"
                     >
                       <strong>What is Sermorelin, and how does it work?</strong>
                     </button>
@@ -2191,7 +2042,9 @@
               </p>
             </div>
 
-            <div class="col-lg-5 order-2 order-lg-2 align-self-start">
+            <div
+              class="col-lg-6 order-2 order-lg-2 align-self-start text-center"
+            >
               <img src="/assets/images/doctor2.webp" class="img-fluid" alt="" />
 
               <div class="d-lg-none d-block text-center mt-5">
@@ -2226,12 +2079,24 @@
             <h5>Connect with us</h5>
             <ul class="social d-flex">
               <li>
-                <a href="#"><img src="/assets/images/fb-icon.webp" alt="" /></a>
+                <!-- <a href="#"><img src="/assets/images/fb-icon.webp" alt="" /></a> -->
+                <a
+                  href="https://www.facebook.com/profile.php?id=61565393030975"
+                  aria-label="facebook"
+                  target="_blank"
+                  ><i class="bi bi-facebook fa-2x ps-3"></i
+                ></a>
               </li>
               <li>
-                <a href="#"
+                <!-- <a href="#"
                   ><img src="/assets/images/ins-icon.webp" alt=""
-                /></a>
+                /></a> -->
+                <a
+                  href="https://www.instagram.com/everlifemd/"
+                  aria-label="instagram"
+                  target="_blank"
+                  ><i class="bi bi-instagram fa-2x ps-3"></i
+                ></a>
               </li>
             </ul>
           </div>
